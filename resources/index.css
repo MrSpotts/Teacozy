@@ -1,3 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  padding-bottom: 30px;
+}
 .header {
     display: flex;
     height: 69px;
@@ -9,14 +22,6 @@
     z-index: 1;
     background-color: black;
   }
-  body {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
-    padding-bottom: 30px;
 }
 .logoimg {
     padding-left: 10px;
@@ -27,14 +32,21 @@
     width: 400px;
     justify-content: space-around;
 }
-.mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    height: 700px;
-    width: 1200px;
-    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+.missions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 700px;
+  width: 1200px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 69px;
 }
 .ourm {
     display: flex;
@@ -43,22 +55,11 @@
     background-color: black;
     padding: 10px;
 }
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-before: 0.83em;
-    margin-after: 0.83em;
-    margin-start: 0px;
-    margin-end: 0px;
-    font-weight: bold;
+h4.handpicked{
+  padding-top: 20px;
 }
-h4 {
-    display: block;
-    margin-before: 1.33em;
-    margin-after: 1.33em;
-    margin-start: 0px;
-    margin-end: 0px;
-    font-weight: bold;
+h4.steep {
+  padding: 10px;
 }
 .teamonth {
     display: flex;
@@ -136,13 +137,4 @@ h4 {
     justify-content: space-around;
     align-items: center;
     height: 200px;
-}
-h5 {
-    display: block;
-    font-size: 0.83em;
-    -webkit-margin-before: 1.67em;
-    -webkit-margin-after: 1.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
 }
